@@ -61,16 +61,25 @@ function scene:create( event )
     local sceneGroup = self.view
 
     -- change background colour
-    display.setDefault ("background", 255/255, 177/255, 0/255) 
+    display.setDefault ("background", 255/255, 192/255, 203/255) 
 
     -- the text that displays the french text
-    frenchObject = display.newText( "Bravo! Tu as bien placer le Coeur, l'Estomac et le Cerveaux!." , 0, 0, nil, 35)
+    frenchObject = display.newText( "Bravo! Tu as bien placer le Coeur," , 0, 0, nil, 67)
     frenchObject.x = display.contentWidth * 1/2
     frenchObject.y = display.contentHeight * 1/2
-    frenchObject:setTextColor(255/255, 71/255, 255/255)
+    frenchObject:setTextColor(0/255, 0/255, 0/255)
     frenchObject.isVisible = true
 
+
+-- the text that displays the french text
+    frenchObjectTwo= display.newText( "l'Estomac et le Cerveaux!." , 0, 0, nil, 70)
+    frenchObjectTwo.x = display.contentWidth * 1/2
+    frenchObjectTwo.y = 500
+    frenchObjectTwo:setTextColor(0/255, 0/255, 0/255)
+    frenchObjectTwo.isVisible = true
+
     sceneGroup:insert( frenchObject )
+    sceneGroup:insert( frenchObjectTwo )
 end
 
 -----------------------------------------------------------------------------------------

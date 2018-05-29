@@ -240,7 +240,7 @@ end
 
 -- Function to Check User Input
 local function CheckUserAnswerInput()
---[[
+
     if (userAnswer == correctAnswer) then
         points = points + 1 
         pointsObject.text = points .. ""
@@ -250,7 +250,7 @@ local function CheckUserAnswerInput()
         incorrectObject.text = " incorrect answer = " .. incorrect
         incorrectSoundChannel = audio.play (incorrectSound)
     end 
-]]--
+
 
     if (incorrect == 3) then 
         composer.gotoScene("you_lose", {effect = "fade", time = 500})
